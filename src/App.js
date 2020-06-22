@@ -13,6 +13,10 @@ function Animal({name,image}){
 // }
 
 
+function renderAnimal(animal){
+  return <Animal name={animal.name} image={animal.image} />
+}
+
 const animalILike = [
   {name: "Cat", image: "https://topclass.chosun.com/news_img/1807/1807_008_1.jpg"},
   {name: "Dog", image: "https://i.ytimg.com/vi/ylPccmfeSGM/maxresdefault.jpg"},
@@ -25,9 +29,7 @@ function App() {
   return (
     <div>
       <h1>My favorite food~</h1>
-      {animalILike.map(animal=>
-        <Animal name={animal.name} image={animal.image} />
-      )}  
+      {animalILike.map(renderAnimal)}  
 
     </div>
   );
