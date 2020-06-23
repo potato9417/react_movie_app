@@ -1,30 +1,18 @@
-import React from 'react';
-import PropTypes from "prop-types";
-
-function Animal({name,image,rating}){
-  return <div>
-    <h3>I love {name}</h3>
-    <h4>{rating}/5.0</h4>
-    <img src={image} alt={name}/>
-  </div>
-}
-
-// function Food(props){
-//   console.log(props)
-//   return <h3>I Love {props.name}</h3>
-// }
-
+import React from "react";
 
 class App extends React.Component {
   state={
     number :0
   }
   plus=()=>{
-    console.log("plus")
+    this.setState(current=>({number : current.number+1}))
   }
   minus=()=>{
-    console.log("minus");
+    this.setState({number : this.state.number-1})
   }
+  // plus함수 minus함수 처럼 두개다 사용가능 하지만 this.state처럼 state에 저장된 값을 불러오는것은 좋지않아
+  // react에서 제공해주는 현재값을 이용하여 사용하는것이 좋다 (plus방법으로 사용하길 권장) 
+
   render(){
     // render은 method
     return (
