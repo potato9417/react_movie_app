@@ -1,4 +1,5 @@
 import React from "react"
+import "./Detail.css"
 
 class Detail extends React.Component {
     componentDidMount(){
@@ -24,8 +25,10 @@ class Detail extends React.Component {
                 <div className="txtBox">
                     <p className="title">{location.state.title}</p>
                     <p className="year">{location.state.year}</p>
-                    <p className="genres">{location.state.genres}</p>
-                    <p className="rating">{location.state.rating}</p>
+                    <ul className="genres">{location.state.genres.map((props,index)=>
+                        <li key={index}>{props}</li>
+                    )}</ul>
+                    <p className="rating">{location.state.rating} / 10.0</p>
                     <p className="summary">{location.state.summary}</p>
                 </div>
             </section>

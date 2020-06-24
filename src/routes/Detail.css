@@ -1,0 +1,57 @@
+.detailContainer {
+    width: 1000px;
+    margin: 0 auto;
+}
+.detailContainer h1 {
+    font-size: 36px;
+    margin-bottom: 70px;
+    font-weight: 700;
+    text-align: left;
+}
+.detailContainer .imgBox {
+    width: 25%;
+    float: left;
+    margin-left: 50px;
+}
+.detailContainer .imgBox img {
+    width: 100%;
+}
+.detailContainer .txtBox {
+    width: 60%;
+    float: left;
+    margin-left: 50px;
+}
+.detailContainer .txtBox .title {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 700;
+    display: inline-block;
+}
+.detailContainer .txtBox .year {
+    margin-left: 10px;
+    display: inline-block;
+}
+.detailContainer .genres {
+    list-style: none;
+    padding: 0;
+}
+.detailContainer .genres li {
+    margin-right: 10px;
+    display: inline-block;
+}
+.detailContainer .summary {
+    margin-top: 100px;
+    position: relative;
+    font-size: 14px;
+    line-height: 2;
+}
+.detailContainer .summary:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+}

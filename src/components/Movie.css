@@ -3,10 +3,11 @@
   float: left;
   background-color: #fff;
   height: 250px;
-  margin: 0 2.5% 100px;
+  margin: 0 3.5% 100px;
   position: relative;
   padding: 20px;
   color: #333;
+  cursor: default;
 }
 
 .moviesInner .imgBox {
@@ -64,4 +65,11 @@
   width: 1px;
   height: 100%;
   background-color: #333;
+}
+.moviesInner .txtBox .moreDetail {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  font-weight: 700;
+  cursor: pointer;
 }

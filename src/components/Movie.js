@@ -5,7 +5,7 @@ import "./Movie.css";
 
 function Movie({id,title,year,poster,rating,summary,genres}){
     return <Link to={{
-        pathname: "/movie-detail",
+        pathname: `/movie/${id}`,
         state: {
             id,title,year,poster,rating,summary,genres
         }
@@ -25,7 +25,7 @@ function Movie({id,title,year,poster,rating,summary,genres}){
                     )}
                 </ul>
                 <h5 className="rating">{rating} / 10.0</h5>
-                <h6 className="summary">{summary.slice(0,150)}..</h6>
+                <p className="moreDetail">More Infomation</p>
             </div>
         </div>
     </Link>
