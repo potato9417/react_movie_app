@@ -1,0 +1,13 @@
+.spanContainer{
+    position: relative;
+}
+span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 150px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 20px;
+}

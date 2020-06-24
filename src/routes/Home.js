@@ -24,7 +24,6 @@ class Home extends React.Component {
           <p className="loading">Loading ...</p>
         </div> 
         : <section className="moviesContainer">
-          <h1 id="logo">Ranked Moives</h1>
           { movies.map(movie => {
             return <Movie key={movie.id} id={movie.id} title={movie.title} year={movie.year} poster={movie.medium_cover_image} rating={movie.rating} summary={movie.summary} genres={movie.genres} />
           }) }

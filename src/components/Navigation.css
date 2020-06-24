@@ -1,0 +1,23 @@
+.naviContainer {
+    text-align: center;
+    margin-bottom: 200px;
+}
+#logo {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 50px 0 0 100px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+.link {
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    color: #333;
+    transition: 0.5s ease;
+}
+.link:hover {
+    background-color: #fff;
+}
